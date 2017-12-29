@@ -2,7 +2,7 @@
 
 # change these to reflect your Lua installation
 # LUA=$(word 1,$(shell which lua5.1$(_LUAEXT)) $(shell which lua51$(_LUAEXT)) lua$(_LUAEXT))
-LUA=.
+LUA=~/temp/lede/build_dir/hostpkg/lua-5.1.5/src
 LUAINC= $(LUA)/src
 LUALIB= $(LUA)/src
 LUABIN= $(LUA)/src
