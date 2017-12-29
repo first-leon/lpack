@@ -1,7 +1,7 @@
 # makefile for pack library for Lua
 
 # change these to reflect your Lua installation
-LUA= /tmp/lhf/lua-5.1.2
+LUA=$(word 1,$(shell which lua5.1$(_LUAEXT)) $(shell which lua51$(_LUAEXT)) lua$(_LUAEXT))
 LUAINC= $(LUA)/src
 LUALIB= $(LUA)/src
 LUABIN= $(LUA)/src
